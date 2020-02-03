@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leap Year Checker</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function leapYear(year){
+			return (year%100 == 0) ? (year%400 == 0) : (year%4==0);
+		}
+		year = prompt("Enter a year");
+		if(leapYear(year))
+			document.write(year + " is leap year.");
+			<!-- console.log(year + " is leap year."); -->
+		else
+			document.write(year + " is not leap year.");
+			<!-- console.log(year + " is not leap year."); -->
+	</script>
+</body>
+</html>

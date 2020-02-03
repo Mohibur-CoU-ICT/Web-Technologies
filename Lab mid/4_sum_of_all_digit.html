@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sum of all digit in a string</title>
+</head>
+<body>
+	<script type="text/javascript">
+		s = prompt("Enter a number");
+		sum = 0;
+		for(i=0; i<s.length; i++){
+			<!-- if (/[0-9]/.test(dstr[i])) sum += parseInt(dstr[i]); -->
+			if(s[i]>='0' && s[i]<='9') sum += parseInt(s[i]);
+		}
+		document.write(sum);
+	</script>
+</body>
+</html>

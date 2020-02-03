@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		s = prompt("Enter first string");
+		for(var i=0; i<s.length; i++){
+			if(s[i]>='0' && s[i]<='9'){
+				index = i;
+				break;
+			}
+		}
+		s2 = s.substr(0, index) + "$" + s.substr(index+1);
+		document.write("Now string is " + s2);
+		<!-- second method using replace method -->
+		<!-- s3 = s.replace(/[0-9]/, '$'); -->
+		<!-- document.write("Now string is " + s3); -->
+	</script>
+</body>
+</html>
