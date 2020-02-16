@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<button onclick="randomImage()">Click here to change the image</button>
+		<script type="text/javascript">
+			function randomImage(){
+				var a = new Array();
+				<!-- a[0] = "bfs.gif"; -->
+				<!-- a[1] = "dfs.gif"; -->
+				a[0] = "1680x1050 Technology Apple.jpg";
+				a[1] = "1680x1050 Technology Hewlett Packard.jpg";
+				var rnd = Math.floor(Math.random() * a.length);
+				document.write('<img src = " + a[rnd] + "/>');
+			}
+		</script>
+	</body>
+</html>

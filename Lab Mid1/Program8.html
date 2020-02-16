@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<p>
+		<a href="#" onmouseover="highlight()" onmouseout="normal()" > Hehehehe ...Magic !! </a>
+		</p>
+		<p>
+		My name is <strong> Mohibur Rahman </strong> . I study in <strong> Comilla University </strong> .
+		</p>
+			
+		<script type="text/javascript">
+
+			var arr = document.getElementsByTagName( 'strong' ) ;
+			function highlight()
+			{
+				for( var i = 0 ; i < arr.length ; i ++ )
+				{
+					arr[ i ].style.color = "red" ;
+				}
+			}
+
+			function normal()
+			{
+				for( var i = 0 ; i < arr.length ; i ++ )
+				{
+					arr[ i ].style.color = "black" ;
+				}
+			}
+		</script>
+	</body>
+</html>

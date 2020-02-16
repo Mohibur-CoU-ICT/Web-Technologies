@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<table id="sample" border="1">
+			<tr>
+				<td>old</td>
+				<td>old</td>
+			</tr>
+		</table>
+		<br>
+		<button onclick="insertRow()">Insert Row</button>
+		<script type="text/javascript">
+			function insertRow(){
+				var val = document.getElementById('sample').insertRow(0);
+				var a = val.insertCell(0);
+				var b = val.insertCell(1);
+				a.innerHTML = " New ";
+				b.innerHTML = " New ";
+			}
+		</script>
+	</body>
+</html>

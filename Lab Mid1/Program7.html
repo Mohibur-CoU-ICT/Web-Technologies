@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<button onclick="randomImg()"> Click for magic !! </button>
+		<script type="text/javascript">
+			function randomImg(){
+				var arr = new Array();
+				arr[0] = "bfs.gif";
+				arr[1] = "dfs.gif";
+				var rnd = Math.floor( Math.random() * arr.length );
+				document.write( '<img src=" ' + arr[rnd] + ' " />' );
+			}
+		</script>
+	</body>
+</html>

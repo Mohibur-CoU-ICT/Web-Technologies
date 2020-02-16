@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script type="text/javascript">
+			class Area
+			{
+				constructor( r , h )
+				{
+					this.r = r ;
+					this.h = h ;
+				}
+
+				cal()
+				{
+					return Math.PI * this.r * this.r * this.h ;
+				}
+			}
+			var a = prompt("Enter radius");
+			var b = prompt("Enter height");
+			ans = new Area( a , b ) ;
+			document.write( ans.cal().toFixed(4) ) ;
+		</script>
+	</body>
+</html>
