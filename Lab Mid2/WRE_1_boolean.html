@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a = prompt("Enter a value");
+		if(a=="true" || a=="false")
+			console.log("boolean");
+		else console.log("not boolean");
+
+		function is_boolean(value)
+        {
+			return value === true || value === false || toString.call(value) === '[object Boolean]';
+        }
+
+		console.log(is_boolean(true));
+		console.log(is_boolean('bar'));
+	</script>
+</body>
+</html>

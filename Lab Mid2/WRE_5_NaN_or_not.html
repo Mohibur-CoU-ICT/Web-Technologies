@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function is_nan(val)
+		{
+			return val !== val;
+		}
+
+		console.log(is_nan(NaN));
+
+		console.log(is_nan('bar'));
+		console.log(is_nan('123'));
+		console.log(is_nan(true));
+	</script>
+</body>
+</html>

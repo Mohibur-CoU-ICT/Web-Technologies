@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a = prompt("Enter first number");
+		var b = prompt("Enter second number");
+		function gcd(x, y)
+		{
+			if(x == 0) return y;
+			return gcd(y%x, x);
+		}
+		var ans = gcd(a, b);
+		document.write("GCD is " + ans);
+	</script>
+</body>
+</html>

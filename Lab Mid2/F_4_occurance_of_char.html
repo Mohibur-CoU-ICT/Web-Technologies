@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function Char_Counts(str1) {
+			var uchars = {};
+			str1.replace(/\S/g, function(l){
+				uchars[l] = (isNaN(uchars[l]) ? 1 : uchars[l] + 1);
+			});
+			return uchars;
+		}
+		<!-- console.log(Char_Counts("The quick brown fox jumps over the lazy dog")); -->
+	
+	
+	<!-- ..................Method 2................... -->
+		var cntS = [];
+		var cntC = [];
+		for(i=0; i<26; i++){
+			cntC.push(0);
+			cntS.push(0);
+		}
+	
+		var small = "abcdefghijklmnopqrstuvwxyz";
+		var capital = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		
+		function occurance(str)
+		{
+			for(var x = 0 ; x < str.length ; x++)
+			{
+				if(str[x]>='a' && str[x]<='z'){
+					index = small.indexOf(str[i]);
+					console.log("index = " + index);
+					cntS[index]++;
+				}
+				else if(str[x]>='A' && str[x]<='Z'){
+					index = capital.indexOf(str[i]);
+					console.log("index = " + index);
+					cntC[index]++;
+				}
+			}
+		}
+		
+		function Print(str)
+		{
+			for(var i=0; i<26; i++)
+			{
+				if(cntS[i] != 0)
+					console.log(small[i] + " = " + cntS[i]);
+			}
+			for(var i=0; i<26; i++)
+			{
+				if(cntC[i] != 0)
+					console.log(capital[i] + " = " + cntC[i]);
+			}
+		}
+		s = prompt("Enter a string");
+		occurance(s);
+		for(i=0; i<26; i++){
+			console.log(cntS[i] + " " + cntC[i]);
+		}
+		Print(s);
+	</script>
+</body>
+</html>

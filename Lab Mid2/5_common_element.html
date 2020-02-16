@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>5. Write a JavaScript program to find the number of elements which presents in both of the given arrays</title>
+</head>
+<body>
+	<script type="text/javascript">
+		a = prompt("Enter first array");
+		b = prompt("Enter second array");
+		arr1 = [];
+		arr2 = [];
+		var num = 0;
+		for(var i=0; i<a.length; i++){
+			if(a[i]==' '){
+				arr1.push(num);
+				num = 0;
+			}
+			else if(a[i]>='0'&&a[i]<='9'){
+				num *= 10;
+				num += parseInt(a[i]);
+			}
+		}
+		arr1.push(num);
+		
+		num = 0;
+		for(var i=0; i<b.length; i++){
+			if(b[i]==' '){
+				arr2.push(num);
+				num = 0;
+			}
+			else if(b[i]>='0'&&b[i]<='9'){
+				num *= 10;
+				num += parseInt(b[i]);
+			}
+		}
+		arr2.push(num);
+		
+		var cnt = 0;
+		for(var i=0; i<arr1.length; i++){
+			for(var j=0; j<arr2.length; j++){
+				if(arr1[i] == arr2[j]){
+					++cnt;
+					<!-- document.write(arr1[i] + " == " + arr2[j]); -->
+					<!-- document.write("</br>"); -->
+				}
+			}
+		}
+		document.write("Common elements is " + cnt);
+	</script>
+</body>
+</html>

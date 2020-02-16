@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		a = prompt("Enter the array");
+		arr = [];
+		var num = 0;
+		for(var i=0; i<a.length; i++){
+			if(a[i]==' '){
+				arr.push(num);
+				num = 0;
+			}
+			else if(a[i]>='0'&&a[i]<='9'){
+				num *= 10;
+				num += parseInt(a[i]);
+			}
+		}
+		arr.push(num);
+		arr.sort();
+		arr.reverse();
+		k = prompt("Enter value of k");
+		document.write(k + "th greatest element is " + arr[k-1]);
+	</script>
+</body>
+</html>

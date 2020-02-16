@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		s = prompt("Enter a string");
+		function isPalindrome(val)
+		{
+			rev = val.split("").reverse().join("");
+			<!-- console.log("val = " + val + " rev = " + rev); -->
+			if(val == rev)
+				console.log(val + " is palindrome.");
+			else console.log(val + " is not palindrome.");
+		}
+
+		console.log(isPalindrome(s));
+		console.log(isPalindrome("12321"));
+		console.log(isPalindrome("mohibur"));
+	</script>
+</body>
+</html>
